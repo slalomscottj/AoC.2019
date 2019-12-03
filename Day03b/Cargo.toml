@@ -1,0 +1,14 @@
+[package]
+name = "Day03b"
+version = "0.1.0"
+authors = ["Minmei"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "^0"
+
+[[bin]]
+name = "day03b"
+path = "src/day03b.rs"
