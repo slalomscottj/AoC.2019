@@ -8,17 +8,21 @@ void main() {
     for(int i = 124075; i <= 580769; i++) {
         sprintf(buffer,"%i", i);
 
+        // Day04a
         int duplicates = 0;
         int descending = 0;
+        // Day04b
         int pairs = 0;
 
         for(int j = 0; j < 5; j++) {
+            // Day04a
             if(buffer[j] == buffer[j+1])
                 duplicates++;
 
             if(buffer[j] > buffer[j+1])
                 descending++;
 
+            // Day04b
             switch(j) {
                 case 0:
                     if(buffer[j] == buffer[j+1] && buffer[j] != buffer[j+2])
@@ -35,7 +39,8 @@ void main() {
             }
         }
 
-        if(duplicates > 0 && descending == 0 && pairs > 0)
+        if(duplicates > 0 && descending == 0 // Day04a
+            && pairs > 0)                    // Day04b
             count++;    
     }
 
