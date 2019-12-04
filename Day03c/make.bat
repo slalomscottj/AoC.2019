@@ -1,0 +1,1 @@
+cl /Fo./obj/ /Fe./bin/ day03c.c move.c visit.c
