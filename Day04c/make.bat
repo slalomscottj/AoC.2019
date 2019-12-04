@@ -1,0 +1,1 @@
+cl /Fo./obj/ /Fe./bin/ day04c.c
